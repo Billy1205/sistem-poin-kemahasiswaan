@@ -25,12 +25,32 @@ The system architecture relies on five primary tables:
 - **Events**: Contains activity details, point weightage, and repetition quotas.
 - **Student & Staff Logs**: Transactional junction tables that track user participation in specific activities.
 
-## ⚡ Installation & Usage
-- **Database Setup**: Ensure your MySQL Server is running. The application will automatically initialize the spkDB database and required tables upon executing the `connect()` function.
-- **Dependencies**: Install the necessary libraries using: `pip install -r requirements.txt`
-- **Configuration**: Update the database connection credentials within the `connect_mysql` function in the main Python file.
-- **Run Application**: `python IBDA02_Billy_Brian_Joey_SPK.py`
-    
+## ⚡ Installation & Setup
+Follow these steps to deploy the application locally:
+
+1. **Prerequisites**: Ensure you have **MySQL Server** installed and running.
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Billy1205/sistem-poin-kemahasiswaan.git
+   cd sistem-poin-kemahasiswaan
+   ```
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Configuration**:
+   Open the Python file and locate the `connect_mysql` function. Update your credentials:
+   ```python
+   host="localhost",
+   user="your_username",
+   password="your_password"
+   ```
+5. **Run Application**:
+   ```bash
+   python IBDA02_Billy_Brian_Joey_SPK.py
+   ```
+   *Note: The system will automatically initialize the `spkDB` database and create all necessary tables on the first run.*
+  
 ***
 
 # Aplikasi Sistem Poin Kemahasiswaan (SPK)
@@ -59,8 +79,28 @@ Proyek ini menggunakan 5 tabel utama:
 - **Events**: Menyimpan detail kegiatan, bobot poin, dan kuota repetisi.
 - **Log Mahasiswa & Log Staff**: Sebagai tabel perantara untuk mencatat partisipasi pengguna dalam kegiatan.
 
-## ⚡ Cara Menjalankan
-- Pastikan MySQL Server Anda aktif. Aplikasi akan secara otomatis membuat database spkDB dan tabel-tabel yang diperlukan saat fungsi `connect()` dijalankan
-- Install library yang dibutuhkan dari file `requirements.txt`
-- Sesuaikan konfigurasi koneksi database pada fungsi `connect_mysql` di dalam file python.
-- Jalankan aplikasi: `python IBDA02_Billy_Brian_Joey_SPK.py`
+## ⚡ Instalasi & Persiapan
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi secara lokal:
+
+1. **Prasyarat**: Pastikan Anda sudah menginstal dan menjalankan **MySQL Server**.
+2. **Klon Repositori**:
+   ```bash
+   git clone https://github.com/Billy1205/sistem-poin-kemahasiswaan.git
+   cd sistem-poin-kemahasiswaan
+   ```
+3. **Instal Dependensi**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Konfigurasi**:
+   Buka file Python dan cari fungsi `connect_mysql`. Perbarui kredensial MySQL Anda:
+   ```python
+   host="localhost",
+   user="username_anda",
+   password="password_anda"
+   ```
+5. **Jalankan Aplikasi**:
+   ```bash
+   python IBDA02_Billy_Brian_Joey_SPK.py
+   ```
+   *Catatan: Sistem akan secara otomatis menginisialisasi database `spkDB` dan membuat semua tabel yang diperlukan saat pertama kali dijalankan.*
